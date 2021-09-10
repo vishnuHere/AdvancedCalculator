@@ -1,0 +1,43 @@
+$button-primary: #0d315c;
+
+.button {
+    padding: 0.625rem 1rem;
+    min-width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: $button-primary;
+    font-size: 0.93rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: darken($button-primary, 5%);
+    }
+
+    &--rounded {
+        border-radius: 50px;
+    }
+
+    &--border {
+        background: white;
+        color: $button-primary;
+        border: 1px solid $button-primary;
+
+        &:hover {
+            background: white;
+            color: darken($button-primary, 5%);
+            border-color: darken($button-primary, 5%);
+        }
+    }
+}
+
+button[disabled] {
+    background: #b8b8b8;
+    cursor: default;
+
+    &:hover {
+        background: #b8b8b8;
+    }
+}

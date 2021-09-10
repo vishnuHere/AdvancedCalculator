@@ -1,0 +1,27 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo Nothing to do in the install phase...
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo building UI for advanced calculator
+      - npm run build
+      - mv dist calc-dist
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - 'calc-dist/**/*'
+    - 'appspec.yml'
+cache:
+  paths:
+    - node_modules/**/*
