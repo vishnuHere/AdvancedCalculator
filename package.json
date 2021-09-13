@@ -1,7 +1,7 @@
 {
-    "name": "clinical-ui",
+    "name": "calculator",
     "version": "1.0.0",
-    "description": "Clinical UI",
+    "description": "Calculator UI",
     "main": "index.js",
     "author": "Vishnu",
     "license": "ISC",
