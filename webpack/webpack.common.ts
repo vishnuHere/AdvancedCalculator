@@ -18,10 +18,6 @@ const config: webpack.Configuration = {
             "@ds-components-css": path.resolve(
                 __dirname,
                 "../node_modules/ds-components/components/dist/esm/css/styles.css"
-            ),
-            "datePickerStyles": path.resolve(
-                __dirname,
-                "../node_modules/react-datetime/css/react-datetime.css"
             )
         }
     },
