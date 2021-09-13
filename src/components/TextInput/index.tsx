@@ -16,6 +16,7 @@ type propType = {
     onBlur?: (event: ChangeEvent<HTMLInputElement>) => void;
     label?: string;
     placeholder?: string;
+    defaultValue?: string;
     className?: string;
     required?: boolean;
     autoFocus?: boolean;
@@ -35,6 +36,7 @@ export const TextInput = (props: propType) => {
         value,
         onChange,
         onBlur,
+        defaultValue,
         label,
         placeholder,
         className,
@@ -68,6 +70,7 @@ export const TextInput = (props: propType) => {
             <input
                 id={id}
                 type={type}
+                defaultValue={defaultValue}
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}

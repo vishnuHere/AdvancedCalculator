@@ -19,9 +19,25 @@ $button-color-launches: #00456b;
         background: $background-primary;
     }
 
+    &__result{
+        input {
+            color: white;
+            font-size: 3rem;
+            padding: 0.5rem;
+       }
+    }
+
+    &__operation{
+        input {
+            color: rgb(163, 141, 101);
+            font-size: 2rem;
+            padding: 0.5rem;
+        }
+    }
+
     &__button_container {
         display: grid;
-        grid-template-columns: repeat(4, calc(22%));
+        grid-template-columns: repeat(4, calc(23%));
         margin: 1rem 0;
         gap: 1.2rem;
         

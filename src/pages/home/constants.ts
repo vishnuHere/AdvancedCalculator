@@ -1,128 +1,119 @@
-import moment from "moment";
-
 export default {
-    DEFAULT_PATIENT_DETAILS: {
-        date: moment(),
-        patientName: "",
-        age: "",
-        description: "",
-        referredDoctor: ""
-    },
     BUTTON_LIST: [
         {
-            label: "CE",
-            operation: "reset",
-            type: "function"
-        },
-        {
             label: "C",
-            operation: "clear",
-            type: "function"
-        },
-        {
-            label: "(",
             operation: "reset",
             type: "function"
         },
         {
-            label: ")",
+            label: "Copy Result",
+            operation: "copy",
+            type: "function"
+        },
+        {
+            label: "DEL",
             operation: "clear",
-            type: "function"
-        },
-        {
-            label: "Sin",
-            operation: "reset",
-            type: "function"
-        },
-        {
-            label: "Cos",
-            operation: "clear",
-            type: "function"
-        },
-        {
-            label: "Tan",
-            operation: "reset",
             type: "function"
         },
         {
             label: "%",
             operation: "clear",
-            type: "function"
+            type: "operator"
+        },
+        {
+            label: "Sin",
+            operation: "sin",
+            type: "math_func"
+        },
+        {
+            label: "Cos",
+            operation: "cos",
+            type: "math_func"
+        },
+        {
+            label: "Tan",
+            operation: "tan",
+            type: "math_func"
+        },
+        {
+            label: "/",
+            operation: "clear",
+            type: "operator"
         },
         {
             label: "7",
             operation: "reset",
-            type: "function"
+            type: "number"
         },
         {
             label: "8",
             operation: "clear",
-            type: "function"
+            type: "number"
         },
         {
             label: "9",
             operation: "reset",
-            type: "function"
+            type: "number"
         },
         {
             label: "x",
             operation: "clear",
-            type: "function"
+            type: "operator"
         },
         {
             label: "4",
             operation: "reset",
-            type: "function"
+            type: "number"
         },
         {
             label: "5",
             operation: "clear",
-            type: "function"
+            type: "number"
         },
         {
             label: "6",
             operation: "reset",
-            type: "function"
+            type: "number"
         },
         {
             label: "-",
             operation: "clear",
-            type: "function"
+            type: "operator"
         },
         {
             label: "1",
-            operation: "reset",
-            type: "function"
+            type: "number"
         },
         {
             label: "2",
-            operation: "clear",
-            type: "function"
+            type: "number"
         },
         {
             label: "3",
-            operation: "reset",
-            type: "function"
+            type: "number"
         },
         {
             label: "+",
-            operation: "clear",
-            type: "function"
+            type: "operator"
         },
         {
             label: "0",
-            operation: "reset",
-            type: "function"
+            type: "number"
         },
         {
-            label: ".",
-            operation: "clear",
-            type: "function"
+            label: "(",
+            // operation: "reset",
+            type: "operator"
+        },
+        {
+            label: ")",
+            // operation: "clear",
+            type: "operator"
         },
         {
             label: "=",
-            operation: "reset",
-            type: "function"
+            operation: "result",
+            type: "operator"
         }
     ]
 };
