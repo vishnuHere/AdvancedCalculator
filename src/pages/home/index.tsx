@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable */
+import React, { useState } from "react";
 import constants from "./constants";
 import styles from "./index.scss";
 import * as QueryString from "query-string";
-import wordings from "./wordings";
 import { Button, TextInput } from "components";
-
 const { BUTTON_LIST } = constants;
 
 const Home: React.FC = () => {
